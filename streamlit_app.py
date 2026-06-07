@@ -13,7 +13,7 @@ st.set_page_config(
 # UI HEADER
 # =========================
 st.title("💧 Kalkulator Efisiensi IPAL")
-st.caption("Menghitung efisiensi penurunan konsentrasi polutan berdasarkan data inlet & outlet")
+st.caption("Menghitung efisiensi penurunan konsentrasi polutan berdasarkan data inlet & outlet"))
 
 st.markdown("---")
 
