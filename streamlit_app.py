@@ -117,6 +117,26 @@ if st.button("🔍 Hitung Efisiensi"):
     else:
         st.error("Kategori: Tidak Efisien ⚠️")
         st.write("Rentang: < 30% — Kinerja IPAL sangat rendah, kemungkinan terjadi gangguan sistem.")
+        
+# =========================
+# INFO STANDAR EFISIENSI IPAL
+# =========================
+st.markdown("---")
+st.subheader("📚 Informasi Standar Efisiensi IPAL")
+
+st.info("""
+💡 Standar umum efisiensi IPAL (acuan edukasi):
+
+🟢 ≥ 90%  → Sangat Efektif (kinerja optimal, sistem bekerja sangat baik)  
+🟢 75% – 89% → Efektif (sudah memenuhi fungsi pengolahan dengan baik)  
+🟡 50% – 74% → Cukup Efisien (masih bekerja, tapi perlu optimasi)  
+🔴 30% – 49% → Kurang Efisien (perlu evaluasi sistem IPAL)  
+⚠️ < 30% → Tidak Efisien (kinerja buruk, kemungkinan ada gangguan sistem)
+
+📌 Catatan:
+Nilai efisiensi dihitung dari penurunan konsentrasi polutan antara inlet dan outlet.
+Semakin tinggi persen, semakin baik kemampuan IPAL dalam mengolah limbah.
+""")
 
 st.markdown("---")
 st.caption("© Tugas Logika Pemrograman Komputer - IPAL Efficiency Tool")
