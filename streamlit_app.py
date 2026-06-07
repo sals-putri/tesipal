@@ -13,14 +13,14 @@ st.set_page_config(
 # UI HEADER
 # =========================
 st.title("💧 Kalkulator Efisiensi IPAL")
-st.caption("Menghitung efisiensi penurunan konsentrasi polutan berdasarkan data inlet & outlet"))
+st.caption("Menghitung efisiensi penurunan konsentrasi polutan berdasarkan data inlet & outlet")
 
 st.markdown("---")
 
 # =========================
 # INPUT USER
 # =========================
-st.subheader("📥 Input Data Konsentrasi (BOD/COD/TSS/pH/Kadar Logam")
+st.subheader("📥 Input Data Konsentrasi (BOD/COD/TSS/pH/Kadar Logam"))
 
 cin = st.number_input(
     "Konsentrasi Inlet (C inlet)",
