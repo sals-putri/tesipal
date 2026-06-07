@@ -5,14 +5,14 @@ import streamlit as st
 # =========================
 st.set_page_config(
     page_title="Efisiensi IPAL Calculator",
-    page_icon="💧",
+    page_icon="🧮",
     layout="centered"
 )
 
 # =========================
 # UI HEADER
 # =========================
-st.title("💧 Kalkulator Efisiensi IPAL")
+st.title("🧮 Kalkulator Efisiensi IPAL")
 st.caption("Menghitung efisiensi penurunan konsentrasi polutan berdasarkan data inlet & outlet")
 
 st.markdown("---")
