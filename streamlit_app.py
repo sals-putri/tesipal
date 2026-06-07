@@ -1,12 +1,45 @@
 import streamlit as st
 
-# =========================
-# KONFIGURASI HALAMAN
-# =========================
 st.set_page_config(
     page_title="Efisiensi IPAL Calculator",
     page_icon="🧮",
     layout="centered"
+)
+
+# =========================
+# CUSTOM BACKGROUND STYLE
+# =========================
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    }
+
+    /* Card-like container */
+    .block-container {
+        padding: 2rem 2rem 2rem 2rem;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Button styling */
+    .stButton>button {
+        background-color: #2e7d32;
+        color: white;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+
+    .stButton>button:hover {
+        background-color: #1b5e20;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # =========================
