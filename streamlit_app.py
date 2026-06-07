@@ -93,13 +93,30 @@ if st.button("🔍 Hitung Efisiensi"):
             value=f"{hasil:.2f} %"
         )
 
-        # Interpretasi sederhana
-        if hasil >= 80:
-            st.info("Kategori: Sangat Efektif 🟢")
-        elif hasil >= 50:
-            st.info("Kategori: Cukup Efektif 🟡")
-        else:
-            st.warning("Kategori: Kurang Efektif 🔴")
+    # =========================
+    # INTERPRETASI EFISIENSI
+    # =========================
+    st.subheader("📌 Interpretasi Hasil")
+
+    if hasil >= 90:
+        st.success("Kategori: Sangat Efektif 🟢")
+        st.write("Rentang: ≥ 90% — Kinerja IPAL sangat optimal, penurunan polutan sangat tinggi.")
+        
+    elif 75 <= hasil < 90:
+        st.info("Kategori: Efektif 🟢")
+        st.write("Rentang: 75% – 89% — Kinerja IPAL sudah baik dan memenuhi fungsi pengolahan.")
+
+    elif 50 <= hasil < 75:
+        st.warning("Kategori: Cukup Efisien 🟡")
+        st.write("Rentang: 50% – 74% — Kinerja IPAL masih cukup, tetapi perlu optimasi proses.")
+
+    elif 30 <= hasil < 50:
+        st.error("Kategori: Kurang Efisien 🔴")
+        st.write("Rentang: 30% – 49% — IPAL belum bekerja optimal, perlu evaluasi sistem.")
+
+    else:
+        st.error("Kategori: Tidak Efisien ⚠️")
+        st.write("Rentang: < 30% — Kinerja IPAL sangat rendah, kemungkinan terjadi gangguan sistem.")
 
 st.markdown("---")
 st.caption("© Tugas Logika Pemrograman Komputer - IPAL Efficiency Tool")
