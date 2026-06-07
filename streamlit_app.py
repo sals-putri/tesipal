@@ -20,16 +20,16 @@ st.markdown("---")
 # =========================
 # INPUT USER
 # =========================
-st.subheader("📥 Input Data Konsentrasi")
+st.subheader("📥 Input Data Konsentrasi (BOD/COD/TSS/pH/Kadar Logam")
 
 cin = st.number_input(
-    "Konsentrasi Inlet (C_inlet)",
+    "Konsentrasi Inlet (C inlet)",
     min_value=0.0,
     format="%.4f"
 )
 
 cout = st.number_input(
-    "Konsentrasi Outlet (C_outlet)",
+    "Konsentrasi Outlet (C outlet)",
     min_value=0.0,
     format="%.4f"
 )
